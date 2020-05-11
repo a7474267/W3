@@ -1,0 +1,134 @@
+/* 插入google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap');
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+/* 方便計算px */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+    height: auto;      
+}
+
+button {
+    outline:none;
+}
+
+/* Variable */
+/* 在CSS內設定變數 */
+/* 參考文章：https://muki.tw/tech/native-css-variables/ */
+:root {
+    --primary-color: #AA0601;
+    --secondary-color: #650300;
+    --background-color-pink: #AA06010D;
+}
+
+/* Utility Class */
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.fxd-c {
+    flex-direction: column;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hrefText {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.fs-20{
+    font-size: 20px;
+}
+.contentBox{
+    max-width:1200px;
+    margin: 0 auto;
+}
