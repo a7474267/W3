@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- Menu -->
-  <header class="menu d-flex align-items-center justify-content-between fs-20" id="menu">
+  <nav class="menu d-flex align-items-center justify-content-between fs-20" id="menu">
     <!-- 漢堡鈕 -->
     <img class="icon-menu cursor-pointer" id="iconMenu" onclick="iconMenuClick()" src="Images/ic_menu_24px.svg" alt="icon-menu">
     <!-- 在href內插入一個無目標的死連結 -->
@@ -39,7 +39,7 @@
         <a href="#" class="hrefText">常見文題</a>
       </li>
     </ul>
-</header>
+  </nav>
   <!-- Banner -->
   <section class="banner d-flex align-items-center justify-content-end">
     <div class="contentBox d-flex align-items-center justify-content-end h-100">
@@ -203,20 +203,20 @@
       <h2 class="title text-center">聯絡我們</h2>
       <p class="dec">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
       <div class="input-group">
-        <label class="d-block label">姓名</label>
+        <label for="" class="d-block label">姓名</label>
         <input type="text" class="from-input" placeholder="陳小明">
       </div>
       <div class="input-group">
-        <label class="d-block label">聯絡電話</label>
-        <input type="text" class="from-input" placeholder="0912-345-678">
+        <label for="phone" class="d-block label">聯絡電話</label>
+        <input type="text" class="from-input" placeholder="0912-345-678" id="phone">
       </div>
       <div class="input-group">
-        <label class="d-block label">電子郵件</label>
-        <input type="text" class="from-input" placeholder="example@email.com">
+        <label for="mail" class="d-block label">電子郵件</label>
+        <input type="text" class="from-input" placeholder="example@email.com" id="mail">
       </div>
       <div class="input-group">
-        <label class="d-block label">意見反應</label>
-        <textarea type="text" rows="6" class="from-textarea" placeholder="請輸入您的意見"></textarea>
+        <label for="textarea" class="d-block label">意見反應</label>
+        <textarea type="text" rows="6" class="from-textarea" placeholder="請輸入您的意見" id="textarea"></textarea>
       </div>
       <div class="input-group">
         <div class="checkBoxArea justify-content-start">
@@ -250,7 +250,7 @@
             <a href="#" class="hrefText">部落格</a>
           </li>
           <li class="li">
-            <a href="#" class="hrefText">常見文題</a>
+            <a href="#" class="hrefText">常見問題</a>
           </li>
         </ul>
       </div>
@@ -275,12 +275,14 @@
           <li class="li">
             <!-- <i class="fa-icon icon-phone icon"></i> -->
             <img class="d-block icon" src="Images/icon-phone.svg" alt="icon-phone">
-            <span class="text">0800-000-000</span>
+            <span><a href="tel:+0800-000-000" class="text">0800-000-000</a></span>
+            <!-- <span class="text">0800-000-000</span> -->
           </li>
           <li class="li">
             <!-- <i class="fa-icon icon-mail icon"></i> -->
             <img class="d-block icon" src="Images/icon-mail.svg" alt="icon-mail">
-            <span class="text">glasses@business.com</span>
+            <span><a href="nailto:glasses@business.com" class="text">glasses@business.com</a></span>
+            <!-- <span class="text">glasses@business.com</span> -->
           </li>
         </ul>
       </div>
